@@ -1,0 +1,40 @@
+<header ng-controller="headerCtrl">
+  <nav>
+    <div class="side-menu">
+      <button ng-click="menu(0)" id="menu-button" class="btn btn-side-menu hidden-lg hidden-md"><i class="fa fa-bars"></i></button>
+      <div id="menu" class="menu">
+        <ul>
+          <a ng-click="menu(1)" ui-sref="home" class="hvr-underline-reveal menu-selector" ui-sref-active="active"><li>{{ 'HEADER.HOME' | translate }}</li></a id="menu-selector">
+          <a ng-click="menu(1)" ui-sref="our-services" class="hvr-underline-reveal menu-selector" ui-sref-active="active"><li>{{ 'HEADER.OUR_SERVICES' | translate }}</li></a>
+          <a ng-click="menu(1)" ui-sref="projects" class="hvr-underline-reveal menu-selector" ui-sref-active="active"><li>{{ 'HEADER.PROJECTS' | translate }}</li></a>
+          <a ng-click="menu(1)" ui-sref="team" class="hvr-underline-reveal menu-selector" ui-sref-active="active"><li>{{ 'HEADER.TEAM' | translate }}</li></a>
+          <a ng-click="menu(1)" ui-sref="feed" class="hvr-underline-reveal menu-selector" ui-sref-active="active"><li>{{ 'HEADER.FEED' | translate }}</li></a>
+          <a ng-click="menu(1)" ui-sref="contact" class="hvr-underline-reveal menu-selector" ui-sref-active="active"><li>{{ 'HEADER.CONTACT' | translate }}</li></a>
+          <span class="lang-select side-place"><span class="lang-select"><a href="" id="en" ng-click="changeLanguage(languages[0].id)">en</a><span class="separator">|</span><a href="" id="de" ng-click="changeLanguage(languages[1].id)">de</a></span></span>
+        </ul>
+      </div>
+    </div>
+    <div class="logo">
+      <a ui-sref="home"><img src="images/mondoit logo_navigation.png" alt="" /></a>
+    </div>
+    <div class="hidden-xs hidden-sm">
+      <ul>
+        <a ui-sref="home" class="hvr-underline-reveal" ui-sref-active="active"><li>{{ 'HEADER.HOME' | translate }}</li></a>
+        <a ui-sref="our-services" class="hvr-underline-reveal" ui-sref-active="active"><li>{{ 'HEADER.OUR_SERVICES' | translate }}</li></a>
+        <a ui-sref="projects" class="hvr-underline-reveal" ui-sref-active="active"><li>{{ 'HEADER.PROJECTS' | translate }}</li></a>
+        <a ui-sref="team" class="hvr-underline-reveal" ui-sref-active="active"><li>{{ 'HEADER.TEAM' | translate }}</li></a>
+        <a ui-sref="feed" class="hvr-underline-reveal" ui-sref-active="active"><li>{{ 'HEADER.FEED' | translate }}</li></a>
+        <a ui-sref="contact" class="hvr-underline-reveal" ui-sref-active="active"><li>{{ 'HEADER.CONTACT' | translate }}</li></a>
+      </ul>
+    </div>
+    <div class="right hidden-xs hidden-sm">
+      <ul>
+        <li>
+          <div>
+            <span class="lang-select"><a href="" id="en-m" ng-click="changeLanguage(languages[0].id)">en</a><span class="separator">|</span><a href="" id="de-m" ng-click="changeLanguage(languages[1].id)">de</a></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

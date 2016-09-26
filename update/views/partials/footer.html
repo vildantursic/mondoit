@@ -1,0 +1,28 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+       <ul>
+         <li><a ui-sref="legal">{{'FOOTER.1' | translate}}</a></li>
+         <li><a ui-sref="termsAndServices">{{'FOOTER.2' | translate}}</a></li>
+         <li><a ui-sref="contact">{{'FOOTER.3' | translate}}</a></li>
+         <!--<li><a ui-sref="#">{{'FOOTER.4' | translate}}</a></li>-->
+       </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="social">
+          <a target="_blank" href="http://www.facebook.com/mondoitde"><i class="fa fa-facebook-official"></i></a>
+          <a target="_blank" href=""><i class="fa fa-google-plus"></i></a>
+          <a target="_blank" href=""><i class="fa fa-linkedin"></i></a>
+          <a target="_blank" href=""><i class="fa fa-instagram"></i></a>
+          <a target="_blank" href=""><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookies" ng-controller="cookiesCtrl" id="cookie">
+  <h3>Mit der Nutzung unserer Webseite stimmen Sie der Speicherung von Cookies zu.</h3>
+  <button id="hide-cookie" class="btn btn-title" ng-click="hideCookies()">OK</button>
+</div>

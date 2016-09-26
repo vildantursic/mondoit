@@ -1,0 +1,144 @@
+<div class="container-fluid">
+  <div class="row our-services">
+    <div class="col-lg-12">
+      <h1>
+        {{'OUR_SERVICES.INTRO_HEADING' | translate}}
+      </h1>
+      <h3>{{'OUR_SERVICES.INTRO_CONTENT' | translate}}</h3>
+    </div>
+    <div class="col-lg-12">
+      <div class="services-mantra">
+        <h3>{{'OUR_SERVICES.MANTRA.HEADING' | translate}}</h3>
+      </div>
+      <p ng-bind-html="'OUR_SERVICES.MANTRA.CONTENT' | translate"></p>
+    </div>
+  </div>
+
+  <div class="row mondo-services-box">
+    <div class="r">
+      <div class="col-lg-12 box">
+        <img class="b-img" src="images/webdesign_services.png" alt="abstract web design icon">
+        <div class="service-more" ng-click="manipulate(0)">
+          WEB DESIGN
+          <p>
+            {{'OUR_SERVICES.SERVICES.WEB.TEXT' | translate}}
+          </p>
+          <button class="more" ui-sref="web">{{'OUR_SERVICES.BUTTON_MORE' | translate}}</button>
+        </div>
+      </div>
+      <div class="col-lg-12 box">
+        <img class="b-img" src="images/mobileapps_services.png" alt="abstract mobile app icon">
+        <div class="service-more" ng-click="manipulate(1)">
+          MOBILE APPS
+          <p>
+            {{'OUR_SERVICES.SERVICES.MOBILE.TEXT' | translate}}
+          </p>
+          <button class="more" ui-sref="mobile">{{'OUR_SERVICES.BUTTON_MORE' | translate}}</button>
+        </div>
+      </div>
+      <div class="col-lg-12 box">
+        <img class="b-img" src="images/ecommerce_services.png" alt="abstract e-commerce icon">
+        <div class="service-more" ng-click="manipulate(2)">
+          E-COMMERCE
+          <p>
+            {{'OUR_SERVICES.SERVICES.COMMERCE.TEXT' | translate}}
+          </p>
+          <button class="more" ui-sref="ecommerce">{{'OUR_SERVICES.BUTTON_MORE' | translate}}</button>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="col-lg-12 box">
+          <img class="b-img" src="images/socialnetworks_services.png" alt="abstract social network icon">
+          <div class="service-more" ng-click="manipulate(3)">
+            SOCIAL NETWORK
+            <p>
+              {{'OUR_SERVICES.SERVICES.SOCIAL.TEXT' | translate}}
+            </p>
+            <button class="more">{{'OUR_SERVICES.BUTTON_MORE' | translate}}</button>
+          </div>
+        </div>
+        <div class="col-lg-12 box">
+          <img class="b-img" src="images/custom_services.png" alt="abstract custom solution icon">
+          <div class="service-more" ng-click="manipulate(4)">
+            CUSTOM SOLUTIONS
+            <p>
+              {{'OUR_SERVICES.SERVICES.CUSTOM.TEXT' | translate}}
+            </p>
+            <button class="more">{{'OUR_SERVICES.BUTTON_MORE' | translate}}</button>
+          </div>
+        </div>
+        <div class="col-lg-12 box">
+          <img class="b-img" src="images/databaseman_services.png" alt="abstract database management icon">
+          <div class="service-more" ng-click="manipulate(5)">
+            DATABASE MANAGEMENT
+            <p>
+              {{'OUR_SERVICES.SERVICES.DATA.TEXT' | translate}}
+            </p>
+            <button class="more">{{'OUR_SERVICES.BUTTON_MORE' | translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row our-services">
+    <h1>{{'OUR_SERVICES.SERVICE_TEXT.HEADER' | translate}}</h1>
+    <p>
+      {{'OUR_SERVICES.SERVICE_TEXT.LINE_1' | translate}}
+      <br>
+      <br>
+      {{'OUR_SERVICES.SERVICE_TEXT.LINE_2' | translate}}
+      <br>
+      <br>
+      {{'OUR_SERVICES.SERVICE_TEXT.LINE_3' | translate}}
+      <br>
+      <br>
+      {{'OUR_SERVICES.SERVICE_TEXT.LINE_4' | translate}}
+      <br>
+      <br>
+      {{'OUR_SERVICES.SERVICE_TEXT.LINE_5' | translate}}
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="skills">
+      <h1>{{'OUR_SERVICES.WE_USE' | translate}}</h1>
+      <h1>
+        <span
+           class="txt-rotate type-me"
+           data-period="2000"
+           data-rotate='[ "Wordpress", "AngularJS", "C#", "NodeJS", "Ruby" ]'></span>
+      </h1>
+      <div>
+        <img src="images/icons/css.svg" alt="css icon">
+        <img src="images/icons/javascript.svg" alt="javascript icon">
+        <img src="images/icons/boostrap.svg" alt="bootstrap icon">
+        <img src="images/icons/sass.svg" alt="sass icon">
+        <img src="images/icons/nodejs.svg" alt="nodejs icon">
+        <img src="images/icons/jquery.svg" alt="jquery icon">
+        <img src="images/icons/github.svg" alt="github icon">
+        <img src="images/icons/angular.svg" alt="angularjs icon">
+        <img src="images/icons/grunt.svg" alt="grunt icon">
+        <img src="images/icons/ruby-rails.svg" alt="ruby on rails icon">
+        <img src="images/icons/html.svg" alt="html icon">
+        <img src="images/icons/python.svg" alt="python icon">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 fifth-box fifth-box-three">
+      <div class="col-lg-6">
+        <button class="btn btn-bottom-main" ui-sref="contact">{{'OUR_SERVICES.BOTTOM_BOX.BUTTON' | translate}}</button>
+      </div>
+      <div class="col-lg-6">
+        <p class="bottom-box">
+          <strong>{{'OUR_SERVICES.BOTTOM_BOX.HEADLINE' | translate}}</strong>
+          <br>
+          <br>
+          {{'OUR_SERVICES.BOTTOM_BOX.CONTENT' | translate}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

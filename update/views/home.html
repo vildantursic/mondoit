@@ -1,0 +1,199 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 first-box">
+      <div class="enterence">
+        <img class="big-logo" src="images/mondoit logo_home_large.png" alt="MondoIT large logo">
+        <h1 class="title">{{'HOME.INTRO_TEXT' | translate}}<br><a id="ux-button">{{'HOME.INTRO_TEXT_2' | translate}}</a></h1>
+        <button class="btn btn-title" ui-sref="team">{{'HOME.BUTTON_MORE' | translate}}</button>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 first-box">
+      <canvas id="canv"></canvas>
+       <div class="sky">
+        <div class="clouds">
+          <div class="c1 three"></div>
+          <div class="c1 four"></div>
+          <div class="c2 one"></div>
+          <div class="c2 two"></div>
+          <div class="c2 three"></div>
+          <div class="c2 four"></div>
+        </div>
+         <h2 class="h" ng-bind-html="'HOME.MANTRA' | translate"></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-3 second-box">
+      <img src="images/outline plan_webdesign_mondoit_color.jpg" alt="stickers and pens">
+      <div class="text-box">
+        <h2>{{'HOME.SECOND_BOX.HEADLINE' | translate}}</h2>
+        <h3><a ui-sref="web"><strong>Web design</strong></a></h3>
+        <h3><a ui-sref="mobile"><strong>Mobile apps</strong></a></h3>
+        <h3><a ui-sref="ecommerce"><strong>E-commerce</strong></a></h3>
+        <h3><strong>Social network</strong></h3>
+        <button class="btn btn-title" ui-sref="our-services">JOIN OUR WORLD</button>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 second-box">
+      <img src="images/sketching_coding_mondoit_color.jpg" alt="Man drawing on blackboard">
+      <div class="image-context">
+        <img src="images/mondoIT_background_logo.jpg" alt="abstract MondoIT logo">
+        <div class="context contact-boxes" ui-sref="contact">
+          <h3>{{'HOME.THIRD_BOX.HEADLINE_TEXT1' | translate}}</h3>
+          <h3>{{'HOME.THIRD_BOX.HEADLINE_TEXT2' | translate}}</h3>
+          <h3>{{'HOME.THIRD_BOX.HEADLINE_TEXT3' | translate}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 second-box">
+      <img src="images/coding_monodit_color.jpg" alt="Laptop with code editor">
+      <img src="images/review_webdesign_mondoit_color.jpg" alt="Person using laptop">
+    </div>
+    <div class="col-lg-3 col-md-3 second-box">
+      <div class="text-box text-box-fix">
+        <h2>{{'HOME.FIRST_BOX.HEADLINE_TEXT1' | translate}}<br>{{'HOME.FIRST_BOX.HEADLINE_TEXT2' | translate}}</h2>
+        <button class="btn btn-title" ui-sref="contact">{{'HOME.FIRST_BOX.BUTTON_TEXT' | translate}}</button>
+      </div>
+      <img src="images/laptop_implementation_mondoit_color.jpg" alt="Cup of coffee next to laptop">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 third-box">
+      <h2>{{'HOME.FOURTH_BOX.HEADLINE' | translate}}</h2>
+      <button class="btn btn-more" type="button" name="button" ui-sref="our-services">{{'HOME.FOURTH_BOX.BUTTON' | translate}}</button>
+    </div>
+  </div>
+
+  <div class="row hidden-xs hidden-sm">
+    <div class="col-lg-2 col-md-2 col-sm-4 fourth-box">
+      <div class="image-context">
+        <img src="images/webdesign_home.png" alt="abstract web design icons">
+        <div class="context">
+          <button class="btn btn-tiles" ui-sref="our-services">WEB DESIGN</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 fourth-box">
+      <div class="image-context">
+        <img src="images/databaseman_home.png" alt="abstract database management icons">
+        <div class="context">
+          <button class="btn btn-tiles" ui-sref="our-services">DATABASE MANAGEMENT</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 fourth-box">
+      <div class="image-context">
+        <img src="images/mobileapps_home.png" alt="abstract mobile apps icons">
+        <div class="context">
+          <button class="btn btn-tiles" ui-sref="our-services">MOBILE APPS</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 fourth-box">
+      <div class="image-context">
+        <img src="images/ecommerce_home.png" alt="abstract e-commerce icons">
+        <div class="context">
+          <button class="btn btn-tiles" ui-sref="our-services">E-COMMERCE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 fourth-box">
+      <div class="image-context">
+        <img src="images/socialnetworks_home.png" alt="abstract social network icons">
+        <div class="context">
+          <button class="btn btn-tiles" ui-sref="our-services">SOCIAL NETWORK</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-4 fourth-box">
+      <div class="image-context">
+        <img src="images/custom_home.png" alt="abstract custom solution icons">
+        <div class="context">
+          <button class="btn btn-tiles" ui-sref="our-services">CUSTOM SOLUTIONS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div clas="row" id="ux-part">
+    <div class="col-lg-12 fifth-box sm" style="margin-top: 0 !important;">
+      <h1>{{'HOME.FIFTH_BOX.INDIVIDUALS.HEADER' | translate | uppercase}}</h1>
+      <p class="p-large">
+        {{'HOME.FIFTH_BOX.INDIVIDUALS.CONTENT' | translate}}
+      </p>
+      <button class="btn btn-more" ui-sref="contact">{{'HOME.FIFTH_BOX.INDIVIDUALS.BUTTON' | translate}}</button>
+    </div>
+    <div class="col-lg-12 fifth-box hidden-xs hidden-sm" style="overflow: hidden">
+      <div class="mondo-slider">
+        <div>
+          <img src="images/slider/desert.jpg" alt="Desert">
+          <div class="context">
+            <div class="frame">
+              <p>{{'HOME.SLIDER.MANTRA_1.TEXT' | translate}}</p>
+              <h3>{{'HOME.SLIDER.MANTRA_1.WRITER' | translate}}</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/slider/forest.jpg" alt="Forest">
+          <div class="context">
+            <div class="frame">
+              <p>{{'HOME.SLIDER.MANTRA_2.TEXT' | translate}}</p>
+              <h3>{{'HOME.SLIDER.MANTRA_2.WRITER' | translate}}</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="images/slider/sea.jpg" alt="Sea">
+          <div class="context">
+            <div class="frame">
+              <p>{{'HOME.SLIDER.MANTRA_3.TEXT' | translate}}</p>
+              <h3>{{'HOME.SLIDER.MANTRA_3.WRITER' | translate}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 fifth-box sm fifth-box-two">
+      <h1>{{'HOME.FIFTH_BOX.COMPANIES.HEADER' | translate | uppercase}}</h1>
+      <p class="p-large">
+        {{'HOME.FIFTH_BOX.COMPANIES.CONTENT' | translate}}
+      </p>
+    </div>
+    <div class="col-lg-12 fifth-box fifth-box-three">
+      <div class="col-lg-6">
+        <button class="btn btn-bottom-main" ui-sref="contact">{{'HOME.BOTTOM_BOX.BUTTON' | translate}}</button>
+      </div>
+      <div class="col-lg-6">
+        <p class="bottom-box">
+          <!-- <strong>{{'HOME.BOTTOM_BOX.HEADLINE' | translate}}</strong> -->
+          <!-- <br>
+          <br> -->
+          {{'HOME.BOTTOM_BOX.CONTENT' | translate}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  $("#ux-button").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#ux-part").offset().top
+    }, 2000);
+  });
+
+  $(document).ready(function(){
+    $('.mondo-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 2000,
+      fade: true,
+      autoplay: true,
+      cssEase: 'linear'
+    });
+  });
+</script>

@@ -1,0 +1,16 @@
+<div class="container-fluid feed">
+  <div class="row">
+    <form>
+      <input type="text" placeholder="Search" data-ng-model="filterText" />
+    </form>
+  </div>
+  <div class="row">
+    <ul class="unstyled">
+      <div class="col-lg-6 feed-box" ng-repeat="feed in feeds | filter:filterText">
+        <h2><a target="_blank" href="{{feed.link}}">{{feed.title}}</a></h2><br>
+        <p ng-bind-html="feed.content"></p><br>
+        <h5>{{feed.publishedDate}}</h5>
+      </div>
+    </ul>
+  </div>
+</div>

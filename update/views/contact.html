@@ -1,0 +1,77 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 first-box">
+      <div class="enterence" style="margin-top: 50px">
+        <img class="big-logo" src="images/mondoit logo_home_large.png" alt="MondoIT large logo">
+        <h1>{{'CONTACT.INTRO_TEXT' | translate}}</h1>
+        <h2 class="title">{{'CONTACT.CONTENT' | translate}}</h2>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 first-box">
+      <img src="images/mondoIT_background large.jpg" alt="MondoIT logo abstract">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="col-lg-6 second-box contact-one">
+        <img src="images/computer_client_contact_mondoit.jpg" alt="Computer on desk">
+      </div>
+      <div class="col-lg-6 second-box contact-one">
+        <p>
+          <strong>{{'CONTACT.BOX.HEADING' | translate}}</strong>
+          <br>
+          <br>
+          {{'CONTACT.BOX.CONTENT' | translate}}
+        </p>
+      </div>
+      <div class="col-lg-6 second-box">
+        <div class="text-box">
+          <h2>{{'CONTACT.SERVICES' | translate}}</h2>
+          <h3><a ui-sref="web"><strong>Web design</strong></a></h3>
+          <h3><a ui-sref="mobile"><strong>Mobile apps</strong></a></h3>
+          <h3><a ui-sref="ecommerce"><strong>E-commerce</strong></a></h3>
+          <h3><strong>Social network</strong></h3>
+          <button class="btn btn-title" ui-sref="our-services">JOIN OUR WORLD</button>
+        </div>
+      </div>
+      <div class="col-lg-6 second-box contact-four">
+        <img src="images/client_mondoit.jpg" alt="Man standing next to laptop">
+        <img class="logo" src="images/mondoit logo_contact.png" alt="MondoIT logo on white background">
+      </div>
+    </div>
+    <div class="col-lg-6">
+
+      <div class="contact-form">
+        <div class="col-lg-12">
+          <h1>{{'CONTACT.MESSAGE.HEADING' | translate}}</h1>
+          <input type="email" ng-model="contactData.email" placeholder="{{'CONTACT.MESSAGE.EMAIL' | translate}}">
+        </div>
+        <div class="col-lg-6">
+          <input type="text" ng-model="contactData.name" placeholder="{{'CONTACT.MESSAGE.NAME' | translate}}">
+        </div>
+        <div class="col-lg-6 input-fix">
+          <input type="text" ng-model="contactData.surname" placeholder="{{'CONTACT.MESSAGE.SURNAME' | translate}}">
+        </div>
+        <div class="col-lg-12">
+          <select>
+            <option value="volvo">Web</option>
+            <option value="saab">Mobile</option>
+            <option value="opel">E-commerce</option>
+            <option value="audi">3D</option>
+            <option value="audi">Internet of Things</option>
+            <option value="audi">Sonstiges</option>
+          </select>
+        </div>
+        <div class="col-lg-12">
+          <textarea ng-model="contactData.content" name="name" rows="8" cols="40"></textarea>
+        </div>
+        <div class="col-lg-12">
+          <button ng-click="sendMessage(contactData)" class="btn btn-contact"><img style="width: 60px;" src="images/mail.png" alt="email icon"></button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

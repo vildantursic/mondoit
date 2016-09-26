@@ -1,0 +1,86 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 first-box team-box">
+      <div class="enterence">
+        <img class="big-logo" src="images/mondoit logo_home_large.png" alt="MondoIT large logo">
+        <h1 class="title" style="padding-left: 70px; padding-right: 70px;" ng-bind-html="'TEAM.INTRO_TEXT' | translate"></h1>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 first-box team-box">
+      <div class="col-lg-6">
+        <img class="fix-img" src="images/coding_team_monodit.jpg" alt="Person coding on laptop">
+      </div>
+      <div class="col-lg-6">
+        <img class="fix-img" src="images/code_monodit.jpg" alt="Laptop with code editor">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 col-md-6 second-box team-box">
+      <img class="fix-img" src="images/team_mondoit.jpg" alt="Two persons consulting each other">
+    </div>
+    <div class="col-lg-6 col-md-6 second-box team-box">
+      <div class="col-lg-6">
+        <div class="image-context">
+          <img class="fix-img" src="images/mondoIT_background_logo.jpg" alt="MondoIT abstract logo">
+          <div class="context contact-boxes" ui-sref="contact" style="padding: 15px; padding-top: 0;">
+            <h3>{{'TEAM.THIRD_BOX.HEADLINE_TEXT1' | translate}}</h3>
+            <h3>{{'TEAM.THIRD_BOX.HEADLINE_TEXT2' | translate}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img class="fix-img" src="images/working_monodit.jpg" alt="Person writing on paper">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 hidden-sm hidden-xs">
+      <div class="team-list" ng-repeat="person in team">
+        <img ng-src="images/team/{{person.img}}.jpg" alt="" ng-click="showMember(person.id)">
+      </div>
+    </div>
+    <div class="col-lg-12 hidden-md hidden-lg">
+      <div class="navigation-buttons" style="margin-top: 50px">
+        <button class="btn btn-navigation" ng-click="navigate(-1)"> < </button>
+        <button class="btn btn-navigation" ng-click="navigate(1)"> > </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 mondo-team" id="slider">
+      <div class="col-lg-6">
+        <div class="contact-buttons hidden-xs hidden-sm">
+          <!-- <div class="contact-button"><p class="up">PHONE</p><p class="down">{{teamMember.phone}}</p></div>
+          <div class="contact-button"><p class="up">EMAIL</p><p class="down">{{teamMember.email}}</p></div> -->
+          <a href="mailto:{{teamMember.email}}?subject=MondoIT"><div class="contact-button"><p>KONTAKT</p></div></a>
+          <i class="fa fa-twitter fa-2x"></i>
+          <i class="fa fa-linkedin fa-2x"></i>
+        </div>
+        <div class="member-skills">
+          <img ng-src="images/team/{{teamMember.img}}.jpg" alt="">
+          <div class="skill">
+            <p>
+              <span ng-repeat="skill in teamMember.skills">{{skill}}<br></span>
+            </p>
+          </div>
+        </div>
+        <div class="team-name-title">
+          <h3>{{teamMember.name | uppercase}}</h3>
+          <h4>{{teamMember.title}}</h4>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p ng-bind-html="teamMember.about"></p>
+        <!-- <div class="navigation-buttons">
+          <button class="btn btn-navigation" id="nav-left"> < </button>
+          <button class="btn btn-navigation" id="nav-right"> > </button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</div>

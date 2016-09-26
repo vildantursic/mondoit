@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row references">
+    <div class="col-lg-12">
+      <h1>
+        {{'REFERENCES.HEADING' | translate}}
+      </h1>
+      <h3>{{'REFERENCES.CONTENT' | translate}}</h3>
+    </div>
+    <div class="col-lg-12 client-work">
+      <div class="col-lg-4 col-md-6" ng-repeat="ref in references">
+        <a href="images/references/{{ref.img}}.jpg" data-lightbox="references"><img ng-src="images/references/{{ref.img}}.jpg" alt=""></a>
+        <div class="references-box r" ng-click="manipulate(ref.id)">
+          {{ref.name}}
+          <p>
+            KUNDE: {{ref.client}}
+            <br>
+            KATEGORIE: {{ref.category}}
+            <br>
+            TOOLS: {{ref.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12 fifth-box fifth-box-three">
+      <div class="partners">
+        <h1>UNSER NETZWERK</h1>
+        <a target="_blank" href="https://alfahosting.de/"><img src="images/partners/alfahosting.png" alt="alfahosting logo"></a>
+        <a target="_blank" href="http://www.benjaminkrohn.de/"><img src="images/partners/benjamin.png" alt="benkamin krohn logo"></a>
+        <a target="_blank" href="http://www.tryshca.de/"><img src="images/partners/tryshca.png" alt="tryscha logo"></a>
+        <a target="_blank" href="http://www.alternamedica.de/"><img src="images/partners/alternaMedica.jpg" alt="alternamedica logo"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>

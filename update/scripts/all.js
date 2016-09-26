@@ -180,7 +180,7 @@ app.controller('contactCtrl', ['$scope', '$http', function($scope, $http){
   $scope.sendMessage = function(data) {
     var req = {
       method: 'POST',
-      url: 'http://localhost:3001/mondo',
+      url: 'http://mondoit.de/mondo',
       data: data
     }
 
